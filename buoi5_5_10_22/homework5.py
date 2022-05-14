@@ -8,9 +8,11 @@ for i in range(n):
     x = int(input())
     if x > M:
         M = x
+        global locate_M
         locate_M = i
     if x < m:
         m = x
+        global locate_m
         locate_m = i
 
 print('Min:', m, 'o v tri', locate_m)
